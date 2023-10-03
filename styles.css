@@ -21,6 +21,10 @@ button {
   border-radius: 5px;
 }
 
+img {
+  border-radius: 1%;
+}
+
 /************
 Nav-bar
 *************/
@@ -33,6 +37,7 @@ nav {
 
 nav button {
   background: #24cfa6;
+  border-radius: 50%;
 }
 
 nav > ul {
