@@ -32,7 +32,13 @@ img {
 
 .logo.load {
   transform: translate(500px, 100px);
-  animation: 3s spin 1s;
+  /* animation: 1s spin 1s infinite linear; */
+  animation-name: spin, fade;
+  animation-duration: 3s, 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear, ease;
+
 }
 
 @keyframes spin {
@@ -42,6 +48,28 @@ img {
 
   to {
     transform: translate(500px, 100px) rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  35% {
+    opacity: 0.75;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 
